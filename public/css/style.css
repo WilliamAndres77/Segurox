@@ -6,14 +6,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
+    color: #000000;
+}
+body #title{
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
+    color: #ffff;
+}
+
+body #text{
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #ffff;
 }
 
 header{
-    background-image: url(../img/bradcam.png);
+    background-color: #284a8b;
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    color: white;
     height: 100vh;
 }
 
@@ -89,6 +100,9 @@ header #menu ul #logo{
     width: 1280px;
     margin: 250px auto;
 }
+/****-------->Modal window cookies<--------****/
+
+/********************************************/
 
 #main-container .section .layout div{
     display: inline-block;
@@ -115,7 +129,7 @@ header #menu ul #logo{
 }
 
 #main-container .section .layout-right .text{
-    width: 500px;
+    width: 400px;
 }
 
 #main-container .section .layout-right .image{
