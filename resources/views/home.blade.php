@@ -27,7 +27,14 @@
                 <a href="#" style="background-color: #6d6e70">
                      Bienvenido(a)  {{ Auth::user()->name }}
                 </a>
-                   
+                <a class="button-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    {{ __('Cerrar sesión') }} 
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                 @csrf
+                </form> 
+                </a> 
                 </p>
                  {{--  
                 <!--Usuario y dropdown cerrar sesión--->
@@ -35,20 +42,11 @@
                     
                     <ul>
                         <li>
-                            <a class="button-item" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                {{ __('Cerrar sesión') }} 
-                            </a> 
+                            
                         </li>
                     </ul>
                 </a>
-
-               
-
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                 @csrf
-                </form> --}}
+                --}}
                
                 
                 </div>
@@ -63,10 +61,10 @@
 		<nav>
 			<a href="#">Portafolio</a>
 			<a href="#">Servicios</a>
-			<a href="#">Suscribirse</a>
-			<a href="#">Facebook</a>
-			<a href="#">Youtube</a>
-			<a href="#">Instagram</a>
+			<a href="#">Cotización</a>
+			<a href="#">Nuestras oficinas</a>
+			<a href="#">Atención al cliente</a>
+			<a href="#">PQRS</a>
 		</nav>
 		<label for="btn-menu">✖️</label>
 	</div>

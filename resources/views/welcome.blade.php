@@ -24,7 +24,7 @@
     
                 <main>
                     <div class="text">
-                        <h1 id="title" name="title">Te aseguramos!</h1>
+                        <h1 id="title" name="title">¡Te aseguramos!</h1>
                         <p id="text" name="text">
                             Conoce la mejor forma de garantizar tu bienestar                             
                         </p>
