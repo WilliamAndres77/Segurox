@@ -24,20 +24,38 @@
 				<a href="#">Inicio</a>
 				<a href="#">Nosotros</a>
 				<a href="#">Contacto</a>
-                <a class="button-item" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();"
-                    style="background-color: #6d6e70">
-                    {{ __('Cerrar sesión') }}
+                <a href="#" style="background-color: #6d6e70">
+                     Bienvenido(a)  {{ Auth::user()->name }}
                 </a>
+                   
+                </p>
+                 {{--  
+                <!--Usuario y dropdown cerrar sesión--->
+                <a href="#" style="background-color: #6d6e70">
+                    
+                    <ul>
+                        <li>
+                            <a class="button-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                {{ __('Cerrar sesión') }} 
+                            </a> 
+                        </li>
+                    </ul>
+                </a>
+
+               
+
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                  @csrf
-                </form>
+                </form> --}}
+               
+                
                 </div>
 			</nav>
 		</div>
 	</header>
-	<div class="capa"></div>
+	<div class="capa"></div> 
 <!--	--------------->
 <input type="checkbox" id="btn-menu">
 <div class="container-menu">
