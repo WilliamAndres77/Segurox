@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url(https://img.freepik.com/foto-gratis/gente-apilando-manos-juntas-parque_53876-63293.jpg?t=st=1656518797~exp=1656519397~hmac=fc6ab78fbc5e8ca6cd2aee6d29ed05af462a316e9626d0476769da0ca8405850&w=826);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+    }
