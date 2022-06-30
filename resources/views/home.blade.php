@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>SeguroX</title>
     <link rel="shorcut icon" href="./img/favicon.png">
     <!--Hoja de estilos------------>
     <link rel="stylesheet" href="/css/home.css">
@@ -21,18 +21,36 @@
 				<h1>Seguro-X</h1>
 			</div>
 			<nav class="menu">
+
 				<a href="#">Inicio</a>
-				<a href="#">Nosotros</a>
-				<a href="#">Contacto</a>
-                <a class="button-item" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();"
-                    style="background-color: #6d6e70">
-                    {{ __('Cerrar sesión') }}
-                </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                 @csrf
-                </form>
+				</li>
+				<li><a href="#">Cotizar seguros</a>
+					<ul class="submenu">
+						<li class="itemlist"><a href="#">Autos</a></li>
+						<li class="itemlist"><a href="#">Motos</a></li>
+						<li class="itemlist"><a href="#">Personas</a></li>
+					</ul>
+				</li>
+                <!-- lista desplegable menú de usuario -->
+				<li><a href="#"id="user" name="user">{{ Auth::user()->name }}</a>
+					<ul class="submenu">
+                    <li class="itemlist">
+                        <a class="button-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            {{ __('Cerrar sesión') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                        </form>
+                    </li>
+				<!-------  end menú de usuario  -------->
+
+
+			<!-- <li class="itemlist"><a href="#">Servicio #3</a></li> --->
+					</ul>
+				</li>
+              
                 </div>
 			</nav>
 		</div>
@@ -54,25 +72,16 @@
 	</div>
 <!--	--------------->
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">{{ __('Pagina principal') }}</div>
-    
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-    
-                        {{ __('Iniciaste sesión') }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ <div class="card-body">
+	@if (session('status'))
+		<div class="alert alert-success" role="alert">
+			{{ session('status') }}
+		</div>
+	@endif
+
+	{{ __('Iniciaste sesión') }}
+</div>
+
 </div>
 </body>
 </html>
