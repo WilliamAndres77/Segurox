@@ -35,6 +35,7 @@
 		line-height:100px;
 	}
 	.container .btn-menu label{
+    	margin-left: 2%;
 		color: #fff;
 		font-size: 25px;
 		cursor: pointer;
@@ -42,12 +43,14 @@
 	.logo h1{
 		color: #fff;
 		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
+		font-size: 36px;
+		margin-left: auto;
 	}
 	.container .menu{
 		float: right;
 		line-height: 100px;
+		margin-right: 1px;
+		
 	}
 	.container .menu a{
 		display: inline-block;

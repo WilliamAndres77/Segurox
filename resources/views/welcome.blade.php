@@ -5,12 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Seguro-X</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
         <link rel="shorcut icon" href="./img/favicon.png">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        
         <div id="main-container">
             <header>
                 <div id="menu">
@@ -24,7 +23,8 @@
     
                 <main>
                     <div class="text">
-                        <h1 id="title" name="title">¡Te aseguramos!</h1>
+                        <h1 id="title" name="title">
+                        ¡Te aseguramos!</h1>
                         <p id="text" name="text">
                             Conoce la mejor forma de garantizar tu bienestar                             
                         </p>
@@ -59,11 +59,13 @@
                     </div>
                     
                 </div>
+
+            
             </div>
-    </div>
-        <footer>
-            SB Segurox project© Derechos Reservados
-        </footer>
-     </div>
+
+            <footer>
+                SB Segurox project© Derechos Reservados
+            </footer>
+        </div>
     </body>
 </html>

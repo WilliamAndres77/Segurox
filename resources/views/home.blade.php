@@ -15,11 +15,9 @@
 	<header class="header">
 		<div class="container">
 		<div class="btn-menu">
-			<label for="btn-menu">☰</label>
+			<label for="btn-menu" style="align-content: float-left">☰SeguroX</label>
 		</div>
-			<div class="logo">
-				<h1>Seguro-X</h1>
-			</div>
+			
 			<nav class="menu">
 				<a href="#">Inicio</a>
 				<a href="#">Nosotros</a>
@@ -27,30 +25,23 @@
                 <a href="#" style="background-color: #6d6e70">
                      Bienvenido(a)  {{ Auth::user()->name }}
                 </a>
-                <a class="button-item" href="{{ route('logout') }}"
+                
+                </p>
+                 {{--  
+                <!--Usuario y dropdown cerrar sesión--->
+               <a class="button-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                     {{ __('Cerrar sesión') }} 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                  @csrf
                 </form> 
-                </a> 
-                </p>
-                 {{--  
-                <!--Usuario y dropdown cerrar sesión--->
-                <a href="#" style="background-color: #6d6e70">
-                    
-                    <ul>
-                        <li>
-                            
-                        </li>
-                    </ul>
-                </a>
-                --}}
+                </a> --}}
                
                 
                 </div>
 			</nav>
+          
 		</div>
 	</header>
 	<div class="capa"></div> 
@@ -70,25 +61,29 @@
 	</div>
 <!--	--------------->
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">{{ __('Pagina principal') }}</div>
-    
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
+      {{-- <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">{{ __('Pagina principal') }}</div>
+            
+                            <div class="card-body">
+                                @if (session('status'))
+                                    <div class="alert alert-success" role="alert">
+                                        {{ session('status') }}
+                                    </div>
+                                @endif
+            
+                                {{ __('Iniciaste sesión') }}
                             </div>
-                        @endif
-    
-                        {{ __('Iniciaste sesión') }}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div>--}}
 </div>
+
 </body>
+
+
+
 </html>
