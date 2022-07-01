@@ -37,33 +37,13 @@
                 </main>
             </header>
             
-            <div class="section" id="features">
-                <div class="layout layout-left">
-                    <div class="text">
-                        <h3>Funcionalidades que de verdad sirven</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro cum soluta ea rem? Culpa reprehenderit natus maxime iste, assumenda rerum illum cumque similique voluptatum nostrum consequatur, accusantium qui, dolorum architecto.</p>
-                    </div>
-                    <div class="image">
-                        <img src="./img/draw.png" width="600rem">
-                    </div>
-                </div>  
-                
-                <div class="layout layout-right">
-                    
-                    <div class="image">
-                        <img src="./img/mobile_screen.png" width="400rem">
-                    </div>
-                    <div class="text">
-                        <h3>Configuración super fácil!</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro cum soluta ea rem? Culpa reprehenderit natus maxime iste</p>
-                    </div>
-                    
-                </div>
-            </div>
-    </div>
-        <footer>
-            SB Segurox project© Derechos Reservados
-        </footer>
+            
+        </div>
+        
      </div>
+     <div id="footer" name="footer">
+        SB Segurox project© Derechos Reservados
+    </div>
+
     </body>
 </html>

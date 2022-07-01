@@ -10,14 +10,26 @@
 		background: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
 		background-size: 100vw 100vh;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
-        overflow: hidden;
 	}
-	body #user{
-		font-size: 18px;
-		font-style: oblique;
-		color: #ffff;
-		background-color: #6d6e70;
+
+	.container-table{
+		background-color: white;
+		position: fixed;
+		height: 30vh;
+		width: 120vh;
+		right: 6%;
+		top: 13%;
+		z-index: -1;
+	}
+
+	table{
+		border: 1px solid black;
+		margin: 1%;
+		width: 98%;
+		height: 98%;
+	}
+	.id{
+		text-align: center;
 	}
 
 	.capa{
@@ -72,7 +84,7 @@
 		line-height: normal;
 		text-decoration: none;
 		color: #fff;
-		transition: all 0.3s ease;
+		/*transition: all 0.3s ease;*/
 		border-bottom: 2px solid transparent;
 		font-size: 15px;
 		margin-right: 5px;
@@ -108,10 +120,10 @@
 	.cont-menu{
 		width: 100%;
 		max-width: 250px;
-		background: #262626;
+		background: #1c1c1c;
 		height: 100vh;
 		position: relative;
-		transition: all 500ms ease;
+		/*transition: all 500ms ease;*/
 		transform: translateX(-100%);
 	}
 
@@ -134,7 +146,7 @@
 
 	.cont-menu nav a:hover{
 		border-left: 5px solid #c7c7c7;
-		background: #1f1f1fdc;
+		background: #1f1f1f;
 	}
 
 	.cont-menu label{
@@ -155,7 +167,7 @@
 
 .menu > li > a{
 	display: block;
-	color: #464646ea;
+	color: #353535;
 	text-decoration: none;
 	z-index: 10;
 }
@@ -170,8 +182,8 @@
 .submenu{
 	margin-top: -12.5%;
 	position: absolute;
-	background: rgba(23, 23, 23, 0.621);
-	width: 100%;
+	background: #333333;
+	width: 120%;
 	list-style: none;
 	visibility: hidden;
 	opacity: 0;
@@ -185,8 +197,7 @@
 .submenu li a{
 	display: block;
 	text-decoration: none;
-	font-family: 'Montserrat Alternates';
-	font-size: 15px;
+	font-family: 'Open sans';
 	text-decoration: none;
 }
 
